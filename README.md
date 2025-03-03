@@ -91,6 +91,16 @@ const e = pipe(5).then(addOne).finallyIfElse(10, double, addOne); // (5 + 1) * 2
 const f = pipe(9).then(addOne).finallyIfElse(10, double, addOne); // (9 + 1) + 1 = 11 since 9 + 1 = 10
 ```
 
+## Debugging
+
+You can use the `inspect` method to view the result of a pipe at an intermediate step.
+
+```
+const a = pipe(5).then(double).inspect().finally(double);     // prints 10 to the console
+                                                              // a will be 20
+
+```
+
 ## Type Inference
 
 Type inference usually works pretty well with Zoopipe, but you can always add annotations if needed or desired.
