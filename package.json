@@ -1,17 +1,22 @@
 {
   "name": "zoopipe",
-  "description": "A class to provide functionality similar to the pipe in functional programming",
+  "description": "A Typescript class to provide functionality similar to the pipe in functional programming",
   "private": false,
   "license": "MIT",
   "version": "1.0.0",
+  "author": "Donovan Harshbarger",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
   "type": "module",
+  "keywords": [
+    "pipe"
+  ],
+  "repository": "https://github.com/harshbarger/zoopipe",
   "scripts": {
-    "yalc": "tsup && yalc publish --push",
+    "build": "tsup",
     "test": "vitest run"
   },
   "devDependencies": {
