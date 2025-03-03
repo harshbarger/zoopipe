@@ -8,6 +8,12 @@ The biggest reason is simplified typing. Whereas the type signature of tradition
 
 For the simplest use cases, Zoopipe may be a bit more verbose than traditional alternatives. But the more complex the pipe, the greater Zoopipe's potential to improve developer experience, especially with the convenience methods such as `ifElse`.
 
+## Installation
+
+```
+npm install zoopipe
+```
+
 ## Basic Usage
 
 `pipe` is a factory function that returns an instance of the `Pipe` class.
