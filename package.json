@@ -1,0 +1,23 @@
+{
+  "name": "zoopipe",
+  "description": "A class to provide functionality similar to the pipe in functional programming",
+  "private": false,
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "yalc": "tsup && yalc publish --push",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.7"
+  }
+}
